@@ -1,1 +1,0 @@
-# gandzala.github.io

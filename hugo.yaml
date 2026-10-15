@@ -1,0 +1,28 @@
+baseURL: https://gandzala.github.io/
+title: Jozef's Tech Blog
+theme: PaperMod
+enableGitInfo: true
+
+caches:
+  images:
+    dir: :cacheDir/images
+
+params:
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowCodeCopyButtons: true
+  ShowToc: true
+  ShowPostNavLinks: true
+
+menu:
+  main:
+    - name: Posts
+      url: /posts/
+      weight: 1
+    - name: Tags
+      url: /tags/
+      weight: 2
+
+markup:
+  highlight:
+    style: dracula
