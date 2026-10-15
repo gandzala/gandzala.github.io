@@ -1,0 +1,46 @@
+https://plantuml.com/sequence-diagram
+
+@startuml
+
+!pragma teoz true
+skinparam roundcorner 10
+hide footbox
+
+'title "Synchronous Request-Reply over Asynchronous Messaging"
+
+autonumber
+
+box "Zeebe" #FFF3E6
+participant "Zeebe\npartition" as PartitionA
+participant "Message\nsubscription" as MessageSubscription
+end box
+
+participant "Process\nsolution" as ProcessSolution
+
+box "Kafka" #EDF4FE
+queue "Request\ntopic" as RequestTopic
+queue "Reply\ntopic" as ReplyTopic
+end box
+
+participant "External\nsystem" as ExternalSystem
+
+activate PartitionA
+
+PartitionA -->> ProcessSolution --++ : ActivatedJob
+
+ProcessSolution ->> RequestTopic ++ : Publish request message
+RequestTopic -->> ProcessSolution : Acknowledgement
+
+ProcessSolution ->> PartitionA --++ : Complete job
+
+create MessageSubscription
+PartitionA ->> MessageSubscription -- : Create
+
+RequestTopic ->> ExternalSystem --++ : Request consumed
+ExternalSystem ->> ReplyTopic --++ : Reply produced
+ReplyTopic -->> ProcessSolution --++ : Reply message
+ProcessSolution ->> MessageSubscription : Publish reply message
+destroy MessageSubscription
+deactivate ProcessSolution
+
+@enduml
