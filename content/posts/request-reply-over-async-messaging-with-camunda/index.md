@@ -2,6 +2,9 @@
 date: '2026-10-16T15:41:00+02:00'
 draft: false
 title: 'Request-Reply over Asynchronous Messaging with Camunda 8'
+cover:
+  image: 'cover.png'
+  relative: true
 ---
 
 Request-reply is one of the oldest integration patterns.
