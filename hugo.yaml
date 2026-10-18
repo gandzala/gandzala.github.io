@@ -13,6 +13,7 @@ params:
   ShowCodeCopyButtons: true
   ShowToc: true
   ShowPostNavLinks: true
+  comments: true
 
 menu:
   main:
