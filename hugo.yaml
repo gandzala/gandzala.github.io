@@ -26,4 +26,4 @@ menu:
 
 markup:
   highlight:
-    style: dracula
+    style: nord
