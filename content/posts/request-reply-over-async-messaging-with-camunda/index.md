@@ -2,6 +2,7 @@
 date: '2026-10-16T15:41:00+02:00'
 draft: false
 title: 'Request-Reply over Asynchronous Messaging with Camunda 8'
+summary: 'Why request-reply over asynchronous messaging (like Kafka) can silently fail in Camunda 8, why Zeebe message buffering only mostly saves you, and four ways to mitigate it.'
 cover:
   image: 'cover.png'
   relative: true
