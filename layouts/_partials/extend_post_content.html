@@ -1,0 +1,11 @@
+{{- /*
+  PaperMod hook, rendered after the page content.
+  Adds a "Download as PDF" link to pages that set params.pdfLink
+  (the CV page, via config/_default/cascade.yaml). The PDF is taken
+  from the page bundle, e.g. content/cv/Jozef_Gandzala_CV.pdf.
+*/ -}}
+{{- if .Param "pdfLink" }}
+{{- with .Resources.GetMatch "*.pdf" }}
+<div class="post-content md-content pdf-download"><p>📄 <a href="{{ .RelPermalink }}">Download as PDF</a></p></div>
+{{- end }}
+{{- end }}

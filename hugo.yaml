@@ -23,6 +23,9 @@ menu:
     - name: Tags
       url: /tags/
       weight: 2
+    - name: CV
+      url: /cv/
+      weight: 3
 
 markup:
   highlight:

@@ -1,0 +1,16 @@
+# Front matter for the CV page (content/cv/), applied via Hugo's cascade so that
+# content/cv/index.md can be the plain Markdown from the resume repo.
+# Hugo merges this file with hugo.yaml (as the `cascade` key).
+target:
+  path: /cv
+title: CV
+description: "Jozef Gandžala — Solution Architect | Camunda 8 & IBM BAW | Java, Kafka, Kubernetes"
+params:
+  ShowToc: false
+  ShowReadingTime: false
+  ShowPostNavLinks: false
+  ShowBreadCrumbs: false
+  ShowShareButtons: false
+  hidemeta: true
+  comments: false
+  pdfLink: true            # "Download as PDF" link, see layouts/_partials/extend_post_content.html
