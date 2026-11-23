@@ -28,7 +28,7 @@ Moved from IBM with the Kyndryl spin-off and continued the Komerční banka enga
 - **Helped Komerční banka (KB) pivot away from IBM BAW:** assessed BAW alternatives against the client's needs and capabilities, deployed a Camunda 8 proof of concept, co-designed and implemented an event-sourced Kafka Streams application that aggregates process data from multiple workflow engines, and built a Camunda SDK (Java/Spring Boot) tailored to the client's environment.
 - **Helped ČSOB select and deploy Camunda 8:** led Kyndryl's response to ČSOB's RFP, deployed a Camunda 8 proof of concept, aligned the platform with the client's requirements, designed and documented high availability (HA) and disaster recovery (DR), and trained developers, architects and analysts on Camunda 8.
 - **Supported KB's developers and administrators:** onboarded and trained new IBM BAW devs and admin, performed code reviews and wrote developer playbooks and admin procedures.
-- Maintained and later decommissioned a custom-built ticketing system for the **Ministry of Foreign Affairs** of the Czech Republic.
+- Maintained and later decommissioned a custom-built ticketing system for the **Ministry of Foreign Affairs** of the Czech Republic, running in Microsoft Azure.
 - Provided part-time IBM BAW on-call support and consulting to Raiffeisenbank.
 
 ### **IBM**, Digital Business Automation Architect
